@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Specifies that this document is HTML5. --> 
+<html lang="id"> <!-- Indicates that the main language of this page is Indonesian. -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <title>Laporan 2 - Pemrograman Web</title> <!-- Display the page title in the browser tab. -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        } 
+        /* to Set the main font to Arial and give a 20px margin to the entire page. */
+
+        header {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        /* For the text in the <header> tag: bold font, font-size: 16px, and 20px bottom margin. */
+
+        .nama {
+            background-color: blue;
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        /*  */
+
+        .nim {
+            color: blue;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        /*  */
+
+        .highlight-blue {
+            background-color: navy;
+            color: white;
+            font-style: italic;
+            padding: 2px 5px;
+        }
+        /*  */
+
+        .highlight-yellow {
+            background-color: yellow;
+            font-style: italic;
+            padding: 2px 5px;
+        }
+        /*  */
+
+        p {
+            text-align: center;
+        }
+        /* All paragraphs (`<p>`) are center-aligned by default. */
+
+        a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        /* Set the appearance of links (<a>): the text is bold, black, and without underlining. */
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        /* When the cursor is hovered over the link, its appearance changes: an underline appears and the text color becomes blue.  */
+    </style>
+</head>
+<body>
+
+    <header>
+        Ini adalah Laporan Praktikum ke 2 dari Matakuliah Pemrograman Web
+    </header>
+
+    <div class="nama"> Mochammad Wirangga Syahputra</div> <!-- Display name with style -->
+    <div class="nim"> 202332134 </div> <!-- Displaying NIM in the style of -->
+
+    <p>
+        Lorem <span class="highlight-blue">ipsum</span> dolor sit amet consectetur adipisicing elit. 
+        Sed quod fuga magni ipsa ipsam atque? Sed vero, quasi nemo illo ea maiores vel itaque deserunt modi unde libero sunt debitis.
+    </p> <!--  A paragraph of dummy text with one word **"ipsum "** highlighted in blue (class `.highlight-blue`). -->
+
+    <p>
+        Lorem ipsum dolor sit <span class="highlight-yellow">amet</span> consectetur adipisicing elit. 
+        Suscipit est mollitia assumenda cum quisquam perferendis minima, 
+        unde fugit aspernatur itaque, doloribus excepturi officia voluptatum adipisci alias provident error ipsa expedita.
+    </p> <!-- Another paragraph with the word **"amet "** highlighted in yellow (class `.highlight-yellow`). -->
+
+    <p style="text-align: left;">
+        <a href="https://youtube.com" target="_blank">Link YouTube Penjelasannya</a>
+    </p> <!-- This paragraph contains a link to YouTube. - The text is left-aligned (overrides the `p { text-align: center; }` rule). - The `target="_blank"` means the link will open in a new tab. -->
+
+</body>
+</html>
